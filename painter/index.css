@@ -1,0 +1,31 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#clear-canvas {
+  float: right;
+  padding: 10px;
+  border: none;
+  margin: 10px 10px;
+  background: #446faf;
+  color: #fff;
+  box-shadow: 1px 1px 1px #444;
+  letter-spacing: 1px;
+}
+
+#toolbar {
+  float: left;
+  list-style-type: none;
+  /* height: 100vh; */
+}
+
+#toolbar li {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#brush-size {
+  padding: 5px;
+}
