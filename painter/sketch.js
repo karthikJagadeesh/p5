@@ -17,13 +17,13 @@ function draw() {}
 function mouseDragged() {
   noStroke();
   fill("red");
-  ellipse(mouseX, mouseY, 10, 10);
+  ellipse(mouseX, mouseY, 5, 5);
 }
 
 function mouseClicked() {
   noStroke();
   fill("red");
-  ellipse(mouseX, mouseY, 10, 10);
+  ellipse(mouseX, mouseY, 5, 5);
 }
 
 function onClearClick() {
