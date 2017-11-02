@@ -17,7 +17,7 @@ const clearCanvas = () => {
 
 // instantiation - runs for the first time
 function setup() {
-  createCanvas(global.innerWidth - 100, global.innerHeight - 50);
+  createCanvas(global.innerWidth - 100, global.innerHeight - 100);
   clearCanvas();
 }
 

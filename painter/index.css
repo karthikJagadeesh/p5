@@ -1,6 +1,8 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Lato', helvetica, sans-serif;
+  text-align: center;
 }
 
 #clear-canvas {
@@ -28,4 +30,13 @@ body {
 
 #brush-size {
   padding: 5px;
+  background: #fff;
+  border: 2px solid #446FAF;
+  border-radius: 10px;
+  outline: none;
+}
+
+canvas {
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 4px #bbb;
 }
