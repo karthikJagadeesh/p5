@@ -1,13 +1,14 @@
 let global = window;
 let brushWidth = 5,
   brushHeight = 5;
+let brushColor = "#851934";
 
 const canvasBackColor = "#fff";
 
 //utilities
 const createBrushStroke = () => {
   noStroke();
-  fill("red");
+  fill(brushColor);
   ellipse(mouseX, mouseY, brushWidth, brushHeight);
 };
 
@@ -49,6 +50,24 @@ function onBrushSizeChange(event) {
       break;
     case "3":
       (brushWidth = 30), (brushHeight = 30);
+      break;
+  }
+}
+
+function onBrushColorChangeClick(event) {
+  const color = event.target.dataset.value;
+  switch (color) {
+    case "red":
+      brushColor = "#851934";
+      break;
+    case "green":
+      brushColor = "#1F8A70";
+      break;
+    case "yellow":
+      brushColor = "#FFE11A";
+      break;
+    case "blue":
+      brushColor = "#165873";
       break;
   }
 }

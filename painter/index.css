@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Lato', helvetica, sans-serif;
+  font-family: "Lato", helvetica, sans-serif;
   text-align: center;
 }
 
@@ -14,6 +14,7 @@ body {
   color: #fff;
   box-shadow: 1px 1px 1px #444;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 #toolbar {
@@ -26,17 +27,60 @@ body {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  margin-left: 20px;
 }
 
 #brush-size {
   padding: 5px;
   background: #fff;
-  border: 2px solid #446FAF;
+  border: 2px solid #446faf;
   border-radius: 10px;
   outline: none;
+  cursor: pointer;
 }
 
 canvas {
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 4px #bbb;
+  cursor: url(http://cur.cursors-4u.net/user/use-1/use151.cur), default;
+}
+
+#red {
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+  background: #851934;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#green {
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+  background: #1F8A70;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#yellow {
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+  background: #FFE11A;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#blue {
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+  background: #165873;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
 }
