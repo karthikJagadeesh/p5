@@ -7,9 +7,24 @@
         <script src="./lib/p5.dom.min.js"></script>
         <script src="./lib/p5.sound.min.js"></script>
         <script src="sketch.js"></script>
-        <title></title>
+        <title>A Simple Painter</title>
+        <style>
+            #clear-canvas {
+                float: right;
+                padding: 10px;
+                background: #eee;
+                border: none;
+                margin: 10px 10px; 
+            }
+            #toolbar {
+                float: left;
+                /* height: 100vh; */
+            }
+        </style>
     </head>
-    <body>
-        
+    <body >
+        <ul id="toolbar">
+            <button id="clear-canvas" onclick="onClearClick()">Clear All</button>
+        </ul>
     </body>
 </html>
