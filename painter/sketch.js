@@ -41,6 +41,10 @@ function setup() {
 // print 'frameRate' to check for the current frame
 function draw() {}
 
+function windowResized() {
+  resizeCanvas(global.innerWidth - 100, global.innerHeight - 100);
+}
+
 // User Interactive events
 function mouseDragged() {
   createBrushStroke();
