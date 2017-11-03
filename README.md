@@ -1,5 +1,11 @@
 # p5
-Contains all the projects/demos/examples made using p5js 
 
-#### DEMOS :- 
-[Painter](https://karthikJagadeesh/p5/painter)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
+## About
+
+Contains all the projects/demos/examples made using [p5js](https://p5js.org/) 
+
+## DEMOS
+ 
+* [Painter](https://karthikJagadeesh.github.io/p5/painter)
