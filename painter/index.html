@@ -15,10 +15,7 @@
 <body>
     <ul id="toolbar">
         <li>
-            <button id="clear-canvas" onclick="onClearClick()">Clear</button>
-        </li>
-        <li>
-            Brush Size:
+            Brush/Eraser Size:
             <select id="brush-size" onchange="onBrushSizeChange(event)">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -26,13 +23,32 @@
             </select>
         </li>
         <li>
-            Quick palette:   
-            <span id="red" data-value="red" onclick="onBrushColorChangeClick(event)"></span>
+            <img id="eraser" src="eraser-icon.png"/> 
+        </li>
+        <li>
+            <button id="clear-canvas" onclick="onClearClick()">Clear all</button>
+        </li>
+        <li>
+            Quick palette:
+            <span id="red" data-value="red" onclick="onBrulshColorChangeClick(event)"></span>
             <span id="green" data-value="green" onclick="onBrushColorChangeClick(event)"></span>
             <span id="yellow" data-value="yellow" onclick="onBrushColorChangeClick(event)"></span>
             <span id="blue" data-value="blue" onclick="onBrushColorChangeClick(event)"></span>
         </li>
+        <li>
+            Change Color:
+            <input id="color-picker" type="color" value="#851934" oninput="colorPickerInputChanged(event)">
+        </li>
+        <li>
+            Toogle Screen:
+            <label class="switch">
+                <input id="toggle-screen" type="checkbox" onchange="onScreenSizeToggle(event)">
+                <span class="slider round"></span>
+            </label>
+        </li>
     </ul>
+    <h1 id="painter-heading">PA<span id="letter-i-painter">I</span>NTER<span id="red-dot-painter"></span>
+    </h1>
 </body>
 
 </html>
