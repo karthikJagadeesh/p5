@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: "Lato", helvetica, sans-serif;
   text-align: center;
+  cursor: url(http://cur.cursors-4u.net/user/use-1/use151.cur), default; 
 }
 
 #clear-canvas {
@@ -43,7 +44,6 @@ body {
 canvas {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 4px #bbb;
-  cursor: url(http://cur.cursors-4u.net/user/use-1/use151.cur), default;
 }
 
 #red {
@@ -205,6 +205,13 @@ input:checked + .slider:before {
 #eraser {
   width: 26px;
   height: 26px;
+  cursor: pointer;
+  vertical-align: middle; 
+}
+
+#brush {
+  width: 34px;
+  height: 34px;
   cursor: pointer;
   vertical-align: middle; 
 }
