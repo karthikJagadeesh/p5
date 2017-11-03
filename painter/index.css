@@ -59,7 +59,7 @@ canvas {
   height: 20px;
   width: 20px;
   border-radius: 25px;
-  background: #1F8A70;
+  background: #1f8a70;
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
@@ -69,7 +69,7 @@ canvas {
   height: 20px;
   width: 20px;
   border-radius: 25px;
-  background: #FFE11A;
+  background: #ffe11a;
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
@@ -83,4 +83,33 @@ canvas {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
+}
+
+#color-picker {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 2px #bbb;
+  cursor: pointer;
+}
+
+#painter-heading {
+  letter-spacing: 8px;
+  color: rgba(0, 0, 0, 0.2);
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#letter-i-painter {
+  color: #556aac;
+}
+
+#red-dot-painter {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: -30px;
+  left: -147px;
+  background: rgb(184, 10, 45);
+  display: inline-block;
+  border-radius: 25px;
 }

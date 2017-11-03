@@ -71,3 +71,8 @@ function onBrushColorChangeClick(event) {
       break;
   }
 }
+
+function colorPickerInputChanged(event) {
+  const color = event.target.value;
+  brushColor = color;
+}
