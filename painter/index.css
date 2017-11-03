@@ -33,7 +33,8 @@ body {
 #brush-size {
   padding: 5px;
   background: #fff;
-  border: 2px solid #446faf;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 1px #bbb;
   border-radius: 10px;
   outline: none;
   cursor: pointer;
