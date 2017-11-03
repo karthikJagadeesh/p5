@@ -200,3 +200,10 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+#eraser {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  vertical-align: middle; 
+}

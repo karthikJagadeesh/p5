@@ -11,9 +11,18 @@ const createBrushStroke = () => {
   noFill();
   stroke(brushColor);
   strokeWeight(brushSize);
-	curve(previousX, previousY, previousX, previousY, mouseX, mouseY, mouseX, mouseY);
-	previousX = mouseX;
-	previousY = mouseY;
+  curve(
+    previousX,
+    previousY,
+    previousX,
+    previousY,
+    mouseX,
+    mouseY,
+    mouseX,
+    mouseY
+  );
+  previousX = mouseX;
+  previousY = mouseY;
 };
 
 const clearCanvas = () => {
@@ -33,21 +42,16 @@ function draw() {}
 
 // User Interactive events
 function mouseDragged() {
-  // print("position at MOUSEDRAGGED function", mouseX, mouseY);
   createBrushStroke();
 }
-
-// function mouseClicked() {
-//   createBrushStroke();
-// }
 
 function mousePressed() {
   previousX = mouseX;
   previousY = mouseY;
 }
 
-function mouseDragged() { 
-	createBrushStroke();
+function mouseDragged() {
+  createBrushStroke();
 }
 
 function onClearClick() {

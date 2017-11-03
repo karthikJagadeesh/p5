@@ -15,15 +15,18 @@
 <body>
     <ul id="toolbar">
         <li>
-            <button id="clear-canvas" onclick="onClearClick()">Clear</button>
-        </li>
-        <li>
-            Brush Size:
+            Brush/Eraser Size:
             <select id="brush-size" onchange="onBrushSizeChange(event)">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
+        </li>
+        <li>
+            <img id="eraser" src="eraser-icon.png"/> 
+        </li>
+        <li>
+            <button id="clear-canvas" onclick="onClearClick()">Clear all</button>
         </li>
         <li>
             Quick palette:
