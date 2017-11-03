@@ -3,6 +3,7 @@ let brushSize = 1;
 let previousX = 0,
   previousY = 0;
 let brushColor = "#851934";
+let currentPaintColor = brushColor;
 
 const canvasBackColor = "#fff";
 
@@ -61,14 +62,20 @@ function onClearClick() {
 function onBrushSizeChange(event) {
   const size = event.target.value;
   switch (size) {
-    case "1":
-      brushSize = 1;
-      break;
     case "2":
-      brushSize = 4;
+      brushSize = 2;
       break;
-    case "3":
-      brushSize = 8;
+    case "4":
+      brushSize = 6;
+      break;
+    case "6":
+      brushSize = 10;
+      break;
+    case "8":
+      brushSize = 20;
+      break;
+    case "10":
+      brushSize = 40;
       break;
   }
 }
@@ -77,26 +84,36 @@ function onBrushColorChangeClick(event) {
   const color = event.target.dataset.value;
   switch (color) {
     case "red":
-      brushColor = "#851934";
+      currentPaintColor = brushColor = "#851934";
       break;
     case "green":
-      brushColor = "#1F8A70";
+      currentPaintColor = brushColor = "#1F8A70";
       break;
     case "yellow":
-      brushColor = "#FFE11A";
+      currentPaintColor = brushColor = "#FFE11A";
       break;
     case "blue":
-      brushColor = "#165873";
+      currentPaintColor = brushColor = "#165873";
       break;
   }
 }
 
 function colorPickerInputChanged(event) {
   const color = event.target.value;
-  brushColor = color;
+  currentPaintColor = brushColor = color;
 }
 
 function onScreenSizeToggle(event) {
   const isFullScreen = event.target.checked;
   fullscreen(isFullScreen);
+}
+
+function chooseBrushType(event) {
+  const brushType = event.target.dataset.value;
+  if (brushType === "eraser") {
+    brushColor = canvasBackColor;
+  }
+  else if (brushType === "brush") {
+    brushColor = currentPaintColor;
+  }
 }
