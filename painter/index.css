@@ -144,6 +144,7 @@ canvas {
   display: inline-block;
   width: 30px;
   height: 17px;  
+  vertical-align: middle;
 }
 
 /* Hide default HTML checkbox */

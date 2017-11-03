@@ -1,16 +1,19 @@
 let global = window;
-let brushWidth = 5,
-  brushHeight = 5;
+let brushSize = 1;
+let previousX = 0,
+  previousY = 0;
 let brushColor = "#851934";
 
 const canvasBackColor = "#fff";
 
 //utilities
 const createBrushStroke = () => {
-  noStroke();
-  fill(brushColor);
-  ellipse(mouseX, mouseY, brushWidth, brushHeight);
-  // print("position at CREATEBRUSH function", mouseX, mouseY);
+  noFill();
+  stroke(brushColor);
+  strokeWeight(brushSize);
+	curve(previousX, previousY, previousX, previousY, mouseX, mouseY, mouseX, mouseY);
+	previousX = mouseX;
+	previousY = mouseY;
 };
 
 const clearCanvas = () => {
@@ -34,8 +37,17 @@ function mouseDragged() {
   createBrushStroke();
 }
 
-function mouseClicked() {
-  createBrushStroke();
+// function mouseClicked() {
+//   createBrushStroke();
+// }
+
+function mousePressed() {
+  previousX = mouseX;
+  previousY = mouseY;
+}
+
+function mouseDragged() { 
+	createBrushStroke();
 }
 
 function onClearClick() {
@@ -46,13 +58,13 @@ function onBrushSizeChange(event) {
   const size = event.target.value;
   switch (size) {
     case "1":
-      (brushWidth = 5), (brushHeight = 5);
+      brushSize = 1;
       break;
     case "2":
-      (brushWidth = 15), (brushHeight = 15);
+      brushSize = 4;
       break;
     case "3":
-      (brushWidth = 30), (brushHeight = 30);
+      brushSize = 8;
       break;
   }
 }
