@@ -10,6 +10,7 @@ const createBrushStroke = () => {
   noStroke();
   fill(brushColor);
   ellipse(mouseX, mouseY, brushWidth, brushHeight);
+  // print("position at CREATEBRUSH function", mouseX, mouseY);
 };
 
 const clearCanvas = () => {
@@ -20,6 +21,7 @@ const clearCanvas = () => {
 function setup() {
   createCanvas(global.innerWidth - 100, global.innerHeight - 100);
   clearCanvas();
+  smooth();
 }
 
 // Draw loop - runs for every frame
@@ -28,6 +30,7 @@ function draw() {}
 
 // User Interactive events
 function mouseDragged() {
+  // print("position at MOUSEDRAGGED function", mouseX, mouseY);
   createBrushStroke();
 }
 
@@ -75,4 +78,9 @@ function onBrushColorChangeClick(event) {
 function colorPickerInputChanged(event) {
   const color = event.target.value;
   brushColor = color;
+}
+
+function onScreenSizeToggle(event) {
+  const isFullScreen = event.target.checked;
+  fullscreen(isFullScreen);
 }
