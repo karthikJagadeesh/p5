@@ -4,6 +4,8 @@ let previousX = 0,
   previousY = 0;
 let brushColor = "#851934";
 let currentPaintColor = brushColor;
+let redDotInPainter = document.querySelector("#red-dot-painter");
+redDotInPainter.style.background = currentPaintColor;
 
 const canvasBackColor = "#fff";
 
@@ -89,15 +91,19 @@ function onBrushColorChangeClick(event) {
   switch (color) {
     case "red":
       currentPaintColor = brushColor = "#851934";
+      redDotInPainter.style.background = currentPaintColor;
       break;
     case "green":
       currentPaintColor = brushColor = "#1F8A70";
+      redDotInPainter.style.background = currentPaintColor;
       break;
     case "yellow":
       currentPaintColor = brushColor = "#FFE11A";
+      redDotInPainter.style.background = currentPaintColor;
       break;
     case "blue":
       currentPaintColor = brushColor = "#165873";
+      redDotInPainter.style.background = currentPaintColor;
       break;
   }
 }
@@ -105,6 +111,7 @@ function onBrushColorChangeClick(event) {
 function colorPickerInputChanged(event) {
   const color = event.target.value;
   currentPaintColor = brushColor = color;
+  redDotInPainter.style.background = currentPaintColor;
 }
 
 function onScreenSizeToggle(event) {
@@ -116,8 +123,7 @@ function chooseBrushType(event) {
   const brushType = event.target.dataset.value;
   if (brushType === "eraser") {
     brushColor = canvasBackColor;
-  }
-  else if (brushType === "brush") {
+  } else if (brushType === "brush") {
     brushColor = currentPaintColor;
   }
 }
