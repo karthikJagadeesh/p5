@@ -1,7 +1,5 @@
 let global = window;
 let brushSize = 1;
-let previousX = 0,
-  previousY = 0;
 let brushColor = "#851934";
 let currentPaintColor = brushColor;
 let redDotInPainter = document.querySelector("#red-dot-painter");
@@ -15,17 +13,15 @@ const createBrushStroke = () => {
   stroke(brushColor);
   strokeWeight(brushSize);
   curve(
-    previousX,
-    previousY,
-    previousX,
-    previousY,
+    pmouseX,
+    pmouseY,
+    pmouseX,
+    pmouseY,
     mouseX,
     mouseY,
     mouseX,
     mouseY
   );
-  previousX = mouseX;
-  previousY = mouseY;
 };
 
 const clearCanvas = () => {
@@ -48,13 +44,8 @@ function windowResized() {
 }
 
 // User Interactive events
-function mouseDragged() {
-  createBrushStroke();
-}
-
 function mousePressed() {
-  previousX = mouseX;
-  previousY = mouseY;
+  createBrushStroke();
 }
 
 function mouseDragged() {
