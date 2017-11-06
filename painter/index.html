@@ -12,7 +12,7 @@
     <ul id="toolbar">
         <li>
             Brush/Eraser Size:
-            <select id="brush-size" onchange="onBrushSizeChange(event)">
+            <select id="brush-size">
                 <option value="2">2</option>
                 <option value="4">4</option>
                 <option value="6">6</option>
@@ -21,29 +21,27 @@
             </select>
         </li>
         <li>
-            <img id="brush" title="brush" src="./images/brush-icon.png" data-value="brush" onclick="(document.body.style.cursor='url(http://cur.cursors-4u.net/user/use-1/use151.cur), default'), (chooseBrushType(event))"
-            />
-            <img id="eraser" title="eraser" src="./images/eraser-icon.png" data-value="eraser" onclick="(document.body.style.cursor='url(./images/eraser-cursor-icon.png), default'), (chooseBrushType(event))"
-            />
+            <img id="brush" title="brush" src="./images/brush-icon.png" data-value="brush"/>
+            <img id="eraser" title="eraser" src="./images/eraser-icon.png" data-value="eraser"/>
         </li>
         <li>
-            <button id="clear-canvas" onclick="onClearClick()">Clear all</button>
+            <button id="clear-canvas">Clear all</button>
         </li>
         <li>
             Quick palette:
-            <span id="red" data-value="red" onclick="onBrushColorChangeClick(event)"></span>
-            <span id="green" data-value="green" onclick="onBrushColorChangeClick(event)"></span>
-            <span id="yellow" data-value="yellow" onclick="onBrushColorChangeClick(event)"></span>
-            <span id="blue" data-value="blue" onclick="onBrushColorChangeClick(event)"></span>
+            <span id="red" data-value="red"></span>
+            <span id="green" data-value="green"></span>
+            <span id="yellow" data-value="yellow"></span>
+            <span id="blue" data-value="blue"></span>
         </li>
         <li>
             Change Color:
-            <input id="color-picker" type="color" value="#851934" oninput="colorPickerInputChanged(event)">
+            <input id="color-picker" type="color" value="#851934">
         </li>
         <li>
             Toggle Screen:
             <label class="switch">
-                <input id="toggle-screen" type="checkbox" onchange="onScreenSizeToggle(event)">
+                <input id="toggle-screen" type="checkbox">
                 <span class="slider round"></span>
             </label>
         </li>
@@ -55,6 +53,7 @@
     <script src="../lib/p5.dom.min.js"></script>
     <script src="../lib/p5.sound.min.js"></script>
     <script src="sketch.js"></script>
+    <script src="events.js"></script>
 </body>
 
 </html>
