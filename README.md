@@ -4,9 +4,10 @@
 
 ## About
 
-Contains all the projects/demos/examples made using [p5js](https://p5js.org/) 
+Contains all the projects/demos/examples made using [p5js](https://p5js.org/)
 
 ## DEMOS
- 
+
 * [Painter](https://karthikJagadeesh.github.io/p5/painter)
 * [Particle System](https://karthikJagadeesh.github.io/p5/particle-system)
+* [Sine Dance](https://karthikJagadeesh.github.io/p5/sine-dance)
