@@ -2,15 +2,32 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Lato", helvetica, sans-serif;
-  text-align: center; 
+  text-align: center;
 }
 
 canvas {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 4px #bbb;
+  border-radius: 10px;
 }
 
 .header {
   letter-spacing: 5px;
   color: rgba(0, 0, 0, 0.2);
+  padding: 0 50px;
+}
+
+#toolbar {
+  vertical-align: middle;
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+}
+
+#speed-slider {
+}
+
+#size-slider {
 }
