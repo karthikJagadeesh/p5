@@ -16,8 +16,8 @@ Contains all the projects/demos/examples made using [p5js](https://p5js.org/)
 
 Navigate to p5\painter\css
 
-1. transpile sass code to css.
+1. transpile sass code to css.                  
     `sass index.scss index.css`
 
-2. watch sass file for changes , converts to css automatically when a change in sass file is detected.
+2. watch sass file for changes , converts to css automatically when a change in sass file is detected.              
     `sass --watch index.scss:index.css`
