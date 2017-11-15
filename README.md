@@ -29,10 +29,12 @@ Contains all the projects/demos/examples made using [p5js](https://p5js.org/)
 
 - **Installing live server and running the example app via live server**
 **Install** : Run the below command in command line
-    `npm install -g live-server`
+    
+	`npm install -g live-server`
 
     **Starting the live server** : navigate to the example folder in command line and run the below command
-    `live-server`
+	
+	`live-server`
 
 ## Transpiling SASS To CSS
 
