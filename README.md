@@ -12,12 +12,41 @@ Contains all the projects/demos/examples made using [p5js](https://p5js.org/)
 * [Particle System](https://karthikJagadeesh.github.io/p5/particle-system)
 * [Sine Dance](https://karthikJagadeesh.github.io/p5/sine-dance)
 
+## Getting Started
+
+- **Git clone** : [https://github.com/karthikJagadeesh/p5.git](https://github.com/karthikJagadeesh/p5.git)
+
+    Make sure git is installed in your local machine , and run the below command 
+
+     `git clone https://github.com/karthikJagadeesh/p5.git`
+
+- **Navigate to any of the examples folder** 
+  
+        - Run the index.html file in any browser
+               ---------- OR -----------   
+        - Run the project example via a live server
+          
+
+- **Installing live server and running the example app via live server**
+**Install** : Run the below command in command line
+    `npm install -g live-server`
+
+    **Starting the live server** : navigate to the example folder in command line and run the below command
+    `live-server`
+
 ## Transpiling SASS To CSS
 
-Navigate to p5\painter\css
+**NOTE : _Before you start using Sass you will need to install Ruby_**
 
-1. transpile sass code to css.                  
-    `sass index.scss index.css`
+- **Installing SASS**
+[http://sass-lang.com/install](http://sass-lang.com/install)
 
-2. watch sass file for changes , converts to css automatically when a change in sass file is detected.              
-    `sass --watch index.scss:index.css`
+- **Transpiling scss files to css**
+  Navigate to .\painter\css in command line
+  `sass index.scss index.css` 
+
+- **Watching Sass Files as and when you change the scss file**
+  Navigate to .\painter\css in command line
+  `sass --watch index.scss:index.css`
+
+Note : Writing normal css in scss file works without any problems.
